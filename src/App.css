@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@media screen and (max-width: 768px) {
+  .navbar-center{
+    display: hidden;
+  }
+}
+@media screen and (min-width: 769px) {
+  .navbar-center{
+    display: flex;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navbar-center{
+  display: flex;
+  justify-content: center;
+}
+}
