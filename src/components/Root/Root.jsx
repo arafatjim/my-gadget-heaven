@@ -13,7 +13,9 @@ const Root = () => {
                                         <NavBar></NavBar>
                                         
                               </div>
-                              <Outlet><Banner></Banner></Outlet>
+                              <div className='-mb-40 w-[98%] mx-auto min-h-screen'>
+                                        <Outlet></Outlet>
+                              </div>
                               <Footer className='mt-0'></Footer>
                     </div>
           );

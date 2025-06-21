@@ -19,14 +19,14 @@ const GadgetDetails = () => {
     );
   }
 
-  const { product_image, Specification, description, product_title, price,stock_quantity,rating } =
+  const { product_image, Specification, description, product_title, price,stock_quantity,rating,brand } =
     gadget;
 
   return (
     <div className="bg-[#f0f0f0] min-h-screen justify-center items-center">
 
       
-        <div className="bg-[#2076bc] text-white mx-auto h-[250px] w-[98%]  relative flex flex-col -mb-20 items-center justify-center">
+        <div className="bg-[#2076bc] text-white mx-auto h-[250px] w-full  relative flex flex-col -mb-20 items-center justify-center">
           <div className="absolute top-0 items-center justify-center w-full pt-8 text-center">
         <h1 className="font-bold text-3xl">Products Details</h1>
         <p>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
@@ -40,11 +40,14 @@ const GadgetDetails = () => {
       <div className="bg-[#ffffff] border-2 relative border-[#9e9e9e] flex flex-col lg:flex-row-reverse items-center justify-between gap-4 p-4 lg:p-8 rounded-lg shadow-lg mx-auto -mt-28 max-w-6xl">
       <div className="grid gap-1 p-2 ">
         <p className="font-bold text-3xl text-[#1bc518] ">{product_title}</p>
-        <p className="font-semibold text-xl">Price: ${price}</p>
+        <div className="flex gap-2 text-[#12b6ab] justify-between items-center font-semibold text-xl">
+          <p className="font-semibold text-xl">Price: ${price}</p>
+          <p>Brand:{brand}</p>
+        </div>
       <p className="text-[#bebebe]">{description}</p>
       <h3 className="border-2 border-[#15b632] font-semibold text-[#0a9b4d] px-4 rounded-4xl w-34">In stock : {stock_quantity}</h3>
           <p className="text-[#9a9999]">{description}</p>
-          <h1 className="text-black font-bold">Specification:</h1>
+          <h1 className="text-[#646060] font-bold">Specification:</h1>
 
           <ol className="list-decimal pl-5 items-center text-[#9a9999] normal-case">
             {Specification.map((spec, index) => (

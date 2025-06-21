@@ -18,7 +18,7 @@ const Footer = () => {
         </nav>
       </footer>
 
-      <footer className="footer mx-auto text-white  sm:justify-around footer-horizontal pt-3 pb-10">
+      <footer className="footer mx-auto text-white  sm:justify-around footer-horizontal pt-3 pb-1">
         <nav>
           <h6 className="footer-title">Services</h6>
           <a className="link link-hover">Branding</a>
