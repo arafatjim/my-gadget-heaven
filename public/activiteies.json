@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Seminars and Workshops",
+    "description": "Get hands-on training in competitive programming, AI, ML, web and software development, UI/UX design, and more.",
+    "category": "Training",
+    "targetAudience": ["Beginners", "Intermediate", "Advanced"],
+    "frequency": "Monthly",
+    "skillsDeveloped": ["Problem Solving", "Design Thinking", "Programming", "AI/ML", "Web Development"],
+    "image": "https://example.com/images/seminars_workshops.jpg"
+  },
+  {
+    "title": "Problem Solving Sessions",
+    "description": "Join weekly problem solving sessions to strengthen analytical thinking, logical reasoning, and core mathematical skills.",
+    "category": "Skill Development",
+    "targetAudience": ["Students", "Competitive Programmers"],
+    "frequency": "Weekly",
+    "skillsDeveloped": ["Analytical Thinking", "Mathematics", "Algorithms", "Data Structures"],
+    "image": "https://example.com/images/problem_solving.jpg"
+  },
+  {
+    "title": "Programming Contests and Hackathons",
+    "description": "Participate in IUPCs, ICPCs, intra college programming contests, hackathons, project showcases, IT quiz contests, etc.",
+    "category": "Competition",
+    "targetAudience": ["Programmers", "Developers", "Tech Enthusiasts"],
+    "frequency": "Quarterly",
+    "skillsDeveloped": ["Teamwork", "Critical Thinking", "Coding Under Pressure", "Innovation"],
+    "image": "https://example.com/images/contests_hackathons.jpg"
+  },
+  {
+    "title": "Tech Talks",
+    "description": "Engage with alumni and mentors, and discuss trending technologies and career insights with fellow members and tech professionals.",
+    "category": "Networking",
+    "targetAudience": ["Students", "Professionals", "Mentors"],
+    "frequency": "Bi-Monthly",
+    "skillsDeveloped": ["Communication", "Career Planning", "Industry Knowledge"],
+    "image": "https://example.com/images/tech_talks.jpg"
+  },
+  {
+    "title": "Industry Visits",
+    "description": "Explore IT firms and startups to interact with industry experts and gain valuable real-world knowledge and career exposure.",
+    "category": "Exposure",
+    "targetAudience": ["Students", "Interns"],
+    "frequency": "Twice a Year",
+    "skillsDeveloped": ["Career Insight", "Networking", "Professionalism"],
+    "image": "https://example.com/images/industry_visits.jpg"
+  },
+  {
+    "title": "Projects and Research",
+    "description": "Bring your ideas to life by working on innovative projects or research under guidance from mentors and senior peers.",
+    "category": "Innovation",
+    "targetAudience": ["All Members", "Researchers"],
+    "frequency": "Continuous",
+    "skillsDeveloped": ["Project Management", "Research", "Team Collaboration", "Technical Writing"],
+    "image": "https://example.com/images/projects_research.jpg"
+  },
+  {
+    "title": "Tech Blogs and Magazines",
+    "description": "Publish your technical articles, project highlights, or research findings to share knowledge and insights with a wider audience.",
+    "category": "Content Creation",
+    "targetAudience": ["Writers", "Developers", "Researchers"],
+    "frequency": "Monthly",
+    "skillsDeveloped": ["Technical Writing", "Communication", "Knowledge Sharing"],
+    "image": "https://example.com/images/tech_blogs.jpg"
+  },
+  {
+    "title": "Social Activities",
+    "description": "Promote digital literacy through IT awareness campaigns and train rural students in basic computing and introductory programming skills.",
+    "category": "Community Service",
+    "targetAudience": ["Rural Students", "Volunteers"],
+    "frequency": "Occasional",
+    "skillsDeveloped": ["Leadership", "Teaching", "Community Engagement", "Social Responsibility"],
+    "image": "https://example.com/images/social_activities.jpg"
+  }
+]

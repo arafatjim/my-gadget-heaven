@@ -1,11 +1,12 @@
 import './App.css'
+import Contacts from './components/Contacts/Contacts'
 
 function App() {
 
 
   return (
     <>
-      <h1 className="title">My Gadget Heaven</h1>
+      
     </>
   )
 }

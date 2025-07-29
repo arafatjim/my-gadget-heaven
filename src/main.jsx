@@ -10,8 +10,16 @@ import {
 import Root from './components/Root/Root.jsx'
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx'
 import Home from './components/Home/Home.jsx';
-import GadgetDetails from './components/GadgetDetails/GadgetDetails.jsx';
-import Gadgets from './components/Gadgets/Gadgets.jsx';
+
+import { HelmetProvider } from 'react-helmet-async';
+import About from './components/About/About.jsx';
+import Events from './components/Events/Events.jsx';
+import Activities from './components/Activities/Activities.jsx';
+import Gallary from './components/Gallary/Gallary.jsx';
+import Executive from './components/Executives/Executive.jsx';
+import Contacts from './components/Contacts/Contacts.jsx';
+import RegistrationFrom from './components/RegistrationForm/RegistrationFrom.jsx';
+import Whyjoin from './components/WhyJoin/Whyjoin.jsx';
 
 // import productJson from '../public/products.json'
 
@@ -24,51 +32,53 @@ const router = createBrowserRouter([
       {
         path: "/home",
         element: <Home />,
-        
+      },
+      
+      
+      {
+        path: '/activities',
+        element: <Activities></Activities>,
+        loader: () => fetch('../public/activiteies.json').then(res => res.json()),
       },
       {
-        path:'/gadgets',
-        element:<Gadgets></Gadgets>,
-        loader:()=>fetch('/products.json'),
+        path: "/about",
+        element:<About></About>
       },
       {
-          path:'gadgetsdetails/:product_id',
-          element:<GadgetDetails></GadgetDetails>,
-          loader:()=>fetch('/products.json'),
+        path:"/events",
+        element: <Events></Events>,
       },
+      {
+        path: "/gallary",
+        element: <Gallary></Gallary>
+      },
+      // {
+      //   path: "/executives",
+      //   element:<Executive></Executive>
+      // },
+      {
+        path: "/contacts",
+        element: <Contacts></Contacts>
+      },
+      {
+        path: "/registration",
+        element:<RegistrationFrom></RegistrationFrom>
+      },
+      {
+        path: "/executives",
+        element: <Whyjoin></Whyjoin>
+      }
     ],
   }
 ]);
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider
+    <HelmetProvider>
+      <RouterProvider
       router={router}
       fallbackElement={<div>Loading...</div>}
     />
+    </HelmetProvider>
   </StrictMode>,
 )
-
-
-
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Root />,
-//     errorElement: <ErrorPage />,
-//     children: [
-//       {
-//         path: "/home",
-//         element: <Home />,
-//         children: [
-//           {
-//             path: "/home/gadgets/:product_id",
-//             element: <GadgetDetails />,
-//             loader:()=>fetch('/package.json'),
-
-//           },
-//         ],
-//       },
-//     ],
-//   }
-// ]);
