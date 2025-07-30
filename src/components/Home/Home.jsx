@@ -15,11 +15,11 @@ const Home = () => {
                               <Helmet>
                                         <title>Delta IT Club | Home</title>
                               </Helmet>
-                               <Mission ></Mission>
+                               {/* <Mission ></Mission>
                                <Activities></Activities>
                                <Whyjoin></Whyjoin>  
                                <Gallary></Gallary>
-                               <Contacts></Contacts>
+                               <Contacts></Contacts> */}
                                      
                     </div>
           );

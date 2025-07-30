@@ -1,26 +1,26 @@
 import React from "react";
+import deltaLogo from '../../assets/deltaLogo.png'
+import nationalUniversityLogo from '../../assets/nationalUniversity.png'
 import { NavLink } from "react-router-dom";
+import clubLogo from '../../assets/clubLogo.jpg';
 const Footer = () => {
   return (
-    <div className="mt-44 bottom-0 w-full  mx-auto">
-      <footer className="footer sm:footer-horizontal bg-[#e9ecef] text-base-content p-10">
-         <nav>
-    <h6 className="footer-title">Services</h6>
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
-  </nav>
+    <div className="mt-14 bottom-0 w-full mx-auto">
+      <footer className="footer footer-horizontal footer-center bg-[#1f1f1f] text-primary-content p-10">
+  <aside>
+    <div className="flex gap-4 mx-auto justify-center text-center items-center">
+      <img className=" bg-[#f5f5f5] rounded-2xl p-2 w-28 lg:w-40 h-36" src={clubLogo} alt="" />
+      <img className=" bg-[#f5f5f5] rounded-2xl p-2 w-28 lg:w-40 h-36" src={deltaLogo} alt="" />
+      <img className=" bg-[#f5f5f5] rounded-2xl p-2 w-28 lg:w-40 h-36" src={nationalUniversityLogo} alt="" />
+    </div>
+    <p className="font-bold">
+      {/* ACME Industries Ltd.
+      <br /> */}
+      A Club of Delta Computer Science College (Affiliated with National University)
+    </p>
+    <p> © {new Date().getFullYear()} - DELTA IT CLUB. All Rights Reserved.</p>  
+  </aside>
   <nav>
-    <h6 className="footer-title">Company</h6>
-    <NavLink to="/about"><a className="link link-hover">About us</a></NavLink>
-    <NavLink to="/events"><a className="link link-hover">Events</a></NavLink>
-    <NavLink to="/activities"><a className="link link-hover">Activities</a></NavLink>
-    <NavLink to="/gallary"><a className="link link-hover">Gallary</a></NavLink>
-    <NavLink to="/contacts"><a className="link link-hover">Contacts</a></NavLink>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Social</h6>
     <div className="grid grid-flow-col gap-4">
       <a>
         <svg
@@ -57,10 +57,7 @@ const Footer = () => {
       </a>
     </div>
   </nav>
-      </footer>
-      <aside className="footer footer-center p-4  text-[#0d0d0d] mx-auto">
-    <p>Copyright © {new Date().getFullYear()} - All right reserved by Delta IT Club</p>
-  </aside>
+</footer>
     </div>
   );
 };

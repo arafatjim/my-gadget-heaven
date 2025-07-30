@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       {
         path: '/activities',
         element: <Activities></Activities>,
-        loader: () => fetch('../public/activiteies.json').then(res => res.json()),
+        loader: () => fetch('/activiteies.json').then(res => res.json()),
       },
       {
         path: "/about",
@@ -49,13 +49,13 @@ const router = createBrowserRouter([
         element: <Events></Events>,
       },
       {
-        path: "/gallary",
+        path: "/gallery",
         element: <Gallary></Gallary>
       },
-      // {
-      //   path: "/executives",
-      //   element:<Executive></Executive>
-      // },
+      {
+        path: "/executives",
+        element:<Executive></Executive>
+      },
       {
         path: "/contacts",
         element: <Contacts></Contacts>
@@ -64,10 +64,10 @@ const router = createBrowserRouter([
         path: "/registration",
         element:<RegistrationFrom></RegistrationFrom>
       },
-      {
-        path: "/executives",
-        element: <Whyjoin></Whyjoin>
-      }
+      // {
+      //   path: "/executives",
+      //   element: <Whyjoin></Whyjoin>
+      // }
     ],
   }
 ]);
